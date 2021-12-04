@@ -1,0 +1,379 @@
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+body{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+}
+
+section{
+    padding-top: 100px;
+}
+
+.site-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.site-title .title{
+    font-size: 35px;
+    font-weight: 600;
+    color: #ed4f2e;
+    text-transform: uppercase;
+}
+
+.site-title .subtitle{
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 540px;
+    margin: 22px 0 28px;
+}
+
+.site-title .line{
+    width: 135px;
+    height: 1px;
+    background: #d7d7d7;
+}
+
+.header .navbar{
+    padding: 35px 0;
+}
+
+.header .navbar .nav-link{
+    padding: 11px 17px;
+    font-size: 14px;
+    color: #1f2c33;
+}
+
+.header .navbar .nav-link.active{
+    color: #fff;
+    font-weight: 700;
+    background: #ed4f2e;
+    border-radius: 5px;
+}
+
+.header .navbar .nav-link:hover{
+    background: #ed4f2e;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.header .navbar .nav-link.active:hover{
+    color: #fff;
+}
+
+/* Main>>>> */
+.main{
+    background: url(../images/header_bg.jpg) no-repeat center / cover;
+    padding: 280px 0 260px;
+}
+
+.main .title{
+    max-width: 920px;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 64px;
+}
+
+.main .subtitle{
+    max-width: 564px;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 40px auto;
+}
+
+.main .main-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 20px 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.main .main-link:hover{
+    box-shadow: 0 0 13px #fff;
+}
+
+/* Services>>>>> */
+.services .item{
+    margin-top: 115px;
+}
+
+.services .item i{
+    font-size: 55px;
+}
+
+.services .item .title{
+    font-size: 25px;
+    color: #1f2c33;
+    margin: 18px 0 13px;
+}
+
+.services .item:hover .title{
+    color: #ed4f2e;
+}
+
+.services .item .text{
+    font-size: 14px;
+    color: #4f4f4f;
+    line-height: 21px;
+}
+
+/* Pricing>>>>>>>>> */
+.pricing .cards{
+    border: 1px solid #ebebeb;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.pricing .cards:hover{
+    border-color:  #ed4f2e;
+}
+
+.pricing .cards:hover .price{
+    background:  #ed4f2e;
+    color: #fff;
+}
+
+.pricing .cards .top{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2c33;
+    padding: 30px 0;
+}
+
+.pricing .cards .price{
+    font-size: 45px;
+    font-weight: 600;
+    color: #1f2c33;
+    padding: 30px 0;
+    background: #ebebeb;
+}
+
+.pricing .cards .price span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pricing .cards ul{
+    padding: 50px 0;
+    list-style: none;
+}
+
+.pricing .cards ul li{
+    font-size: 14px;
+    color: #4f4f4f;
+    line-height: 31px;
+    margin: 0;
+}
+
+.pricing .cards .link{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #ed4f2e;
+    margin-bottom: 55px;
+}
+
+.pricing .cards .link:hover{
+    background: #fff;
+    color: #ed4f2e;
+    border:1px solid #ed4f2e;
+}
+
+/* Projects>>>> */
+.projects .site-title{
+    margin-bottom: 100px;
+}
+
+.projects .item{
+    width: 100%;
+    height: 360px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .item img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.projects .item:hover img{
+    transform: scale(1.5);
+}
+
+.projects .item span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background: rgba(237, 79, 46, 0.5);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.projects .item:hover span{
+    opacity: 1;
+}
+
+/* Contacts>>>>> */
+.contacts{
+    padding-bottom: 100px;
+}
+
+.contacts form{
+    margin-top: 100px;
+}
+
+.contacts .input{
+    background: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #1f2c33;
+    padding: 30px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.contacts .input:focus{
+    border-color: #ed4f2e;
+}
+
+.contacts textarea{
+    resize: none;
+    height: 295px;
+}
+
+.contacts .btn{
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 43px;
+    border-radius: 5px;
+    background: #ed4f2e;
+}
+
+.contacts .btn:hover{
+    background: #fff;
+    color: #ed4f2e;
+    box-shadow: 0 0 0 1px #ed4f2e;
+}
+
+/* Footer>>>>>> */
+.footer{
+    background: #1f2c33;
+}
+
+.footer .block{
+    padding-bottom: 90px;
+}
+
+.footer .block .ftitle{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.footer .block img{
+    padding-bottom: 15px;
+}
+
+.footer .block .subtitle{
+    font-size: 14px;
+    color: #a3b1bf;
+}
+
+.footer .block .sub{
+    font-size: 14px;
+    color: #a3b1bf;
+}
+
+.footer .n_2 .subtitle{
+    padding-bottom: 15px;
+}
+
+.footer .n_4 .subs{
+    display: flex;
+    padding: 25px 0px;
+}
+
+.footer .n_4 .socials{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .n_4 .socials i{
+    padding: 12px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.footer .n_4 input{
+    padding: 12px 10px;
+    background: #404b51;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.footer .n_4 input::placeholder{
+    font-size: 14px;
+    color: #747f89;
+}
+
+.footer .n_4 input:focus{
+    border: 1px solid #ffffff;
+}
+
+.footer .n_4 button{
+    padding: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    background: #ed4f2e;
+    outline: none;
+    border: none;
+    width: 40%;
+    text-align: center;
+}
+
+.copyright{
+    background: #283645;
+}
+
+.copyright p{
+    text-align: center;
+    color: #ffffff;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
